@@ -201,12 +201,6 @@
   .was-night{color:var(--muted);}
   .room-extra{font-size:13px;color:var(--muted);margin-top:8px;}
   .room-extra b{color:var(--ink);font-weight:600;}
-  .avail{display:inline-flex;align-items:center;gap:7px;margin-top:13px;padding:6px 13px;border-radius:20px;font-family:var(--accent);font-size:11.5px;font-weight:600;letter-spacing:.05em;}
-  .avail::before{content:'';width:8px;height:8px;border-radius:50%;}
-  .avail.hi{background:var(--ok-bg);color:var(--ok);}.avail.hi::before{background:var(--ok);}
-  .avail.med{background:var(--warn-bg);color:var(--warn);}.avail.med::before{background:var(--warn);}
-  .avail.lo{background:var(--stop-bg);color:var(--stop);}.avail.lo::before{background:var(--stop);}
-  .avail.lo{animation:pulse 2.4s ease-in-out infinite;}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.62}}
   .room-hr{height:1px;background:var(--hairline);margin:18px 0;}
   .feats{display:flex;flex-direction:column;gap:9px;}
@@ -361,7 +355,6 @@
     .hero-bg,.band-bg{background-attachment:scroll;}
     .reveal,.stagger>*{opacity:1!important;transform:none!important;transition:none!important;}
     .scrolldown .arrow{animation:none;}
-    .avail.lo{animation:none;}
     .gtile:hover img{transform:none;}
   }
 </style>
@@ -409,7 +402,7 @@
       <div class="hs"><div class="l">Return</div><div class="v">Jan 28, 2027</div></div>
       <div class="hs"><div class="l">Duration</div><div class="v">4 Nights</div></div>
       <div class="hs"><div class="l">Resort</div><div class="v">All-Inclusive</div></div>
-      <div class="hs"><div class="l">Rooms</div><div class="v">40 Total</div></div>
+      <div class="hs"><div class="l">Final Payment</div><div class="v">Nov 10, 2026</div></div>
     </div>
     <br>
     <a class="btn btn-primary" href="#reserve">Reserve Your Spot &nbsp;&rarr;</a>
@@ -430,7 +423,7 @@
       <div class="reward-copy reveal">
         <p class="lede">The President's Club is your reward for the hard work you put into selling real estate. Award levels are tracked all year on your closed GCI &mdash; clear, simple, and entirely yours to earn.</p>
         <p>Every award is paid as a <strong>check at the December sales meeting</strong>. We encourage you to put those funds toward your trip &mdash; it keeps your choice of room, extra nights, and future destinations flexible.</p>
-        <p>Rooms are reserved on a <strong>first-come, first-served basis</strong>. Once you submit your reservation, Jenny Miller &mdash; our travel agent &mdash; will confirm your room and arrange payment. With only 40 rooms, the best ones go quickly.</p>
+        <p>When you submit your reservation, <strong>choose your preferred room type</strong>. Availability of your preferred room is not guaranteed &mdash; Jenny Miller, our travel agent, will confirm with the resort and with you before anything is booked or any money is owed.</p>
         <p>Every Coldwell Banker Select and Coldwell Banker Plaza agent is welcome. Earn your way, or reserve your own spot and join the celebration.</p>
       </div>
       <div class="facts reveal">
@@ -438,7 +431,7 @@
         <div class="fact"><span class="fl">Resort Style</span><span class="fv">All-Inclusive &middot; Adults-Only &middot; Unlimited-Luxury&reg;</span></div>
         <div class="fact"><span class="fl">Trip Dates</span><span class="fv">January 24&ndash;28, 2027 &middot; 4 Nights</span></div>
         <div class="fact"><span class="fl">Final Payment Due</span><span class="fv">November 10, 2026</span></div>
-        <div class="fact"><span class="fl">Total Rooms</span><span class="fv">40 &middot; First-Come, First-Served</span></div>
+        <div class="fact"><span class="fl">Room Selection</span><span class="fv">Choose your preferred type &middot; confirmed by our travel agent</span></div>
         <div class="fact"><span class="fl">Airport Transfers</span><span class="fv">~$36 per person &middot; via our travel agent</span></div>
         <div class="fact"><span class="fl">Estimated Airfare</span><span class="fv">~$600 per person &middot; booked independently</span></div>
       </div>
@@ -537,7 +530,7 @@
       <span class="eyebrow">Choose Your Room</span>
       <h2>Room Options &amp; Pricing</h2>
       <hr class="rule center">
-      <p>All rates are per person, based on double occupancy, at our exclusive group block rate &mdash; regular pricing is shown crossed out so you can see your savings. <strong>Final payment is due November 10, 2026.</strong> Traveling solo? Your total is the same as two guests (resort policy). Rooms are limited &mdash; reserve early.</p>
+      <p>All rates are per person, based on double occupancy, at our exclusive group block rate &mdash; regular pricing is shown crossed out so you can see your savings. <strong>Final payment is due November 10, 2026.</strong> Traveling solo? Your total is the same as two guests (resort policy).</p>
     </div>
 
     <div class="room-feature reveal">
@@ -550,14 +543,14 @@
       </div>
     </div>
 
-    <div class="alert alert-warn reveal">
-      <span class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18.5A1.5 1.5 0 0 0 3.1 21h17.8a1.5 1.5 0 0 0 1.3-2.5L13.7 3.9a1.6 1.6 0 0 0-2.8 0z"/><path d="M12 9v4.5"/><path d="M12 17h.01"/></svg></span>
-      <span><strong>Act fast:</strong> the Preferred Club Junior Suite, Tropical View has only <strong>5 rooms</strong>. Every room is first-come, first-served upon reservation submission.</span>
+    <div class="alert alert-info reveal">
+      <span class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg></span>
+      <span><strong>Choose your preferred room type.</strong> Availability of your preferred room is not guaranteed &mdash; Jenny Miller, our travel agent, will confirm with the resort and with you before anything is booked or any money is owed.</span>
     </div>
 
     <div class="rooms">
       <div class="room reveal">
-        <div class="room-h"><div class="rn">Junior Suite<br>Tropical View</div><div class="avail hi">15 Available</div></div>
+        <div class="room-h"><div class="rn">Junior Suite<br>Tropical View</div></div>
         <div class="room-b">
           <div class="room-was">Regularly <del>$1,501.44</del> / person</div>
           <div class="room-price">$1,181.56 <s>/ person</s></div>
@@ -575,7 +568,7 @@
       </div>
 
       <div class="room reveal">
-        <div class="room-h"><div class="rn">Junior Suite<br>Partial Ocean View</div><div class="avail med">10 Available</div></div>
+        <div class="room-h"><div class="rn">Junior Suite<br>Partial Ocean View</div></div>
         <div class="room-b">
           <div class="room-was">Regularly <del>$1,644.96</del> / person</div>
           <div class="room-price">$1,294.12 <s>/ person</s></div>
@@ -599,7 +592,6 @@
           <div class="room-price">$1,406.64 <s>/ person</s></div>
           <div class="room-save">You save $381.84 / person</div>
           <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$351.66 / person / night</b> <span class="was-night">(reg. <del>$447.12</del>)</span></div>
-          <div class="avail lo">Only 5 Rooms &mdash; Limited</div>
           <div class="room-hr"></div>
           <div class="feats">
             <div class="feat">4-night stay (Jan 24&ndash;28) included</div>
@@ -618,7 +610,6 @@
           <div class="room-price">$1,519.16 <s>/ person</s></div>
           <div class="room-save">You save $412.84 / person</div>
           <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$379.79 / person / night</b> <span class="was-night">(reg. <del>$483.00</del>)</span></div>
-          <div class="avail med">10 Available</div>
           <div class="room-hr"></div>
           <div class="feats">
             <div class="feat">4-night stay (Jan 24&ndash;28) included</div>
@@ -722,7 +713,7 @@
       <div class="icard span2 reveal">
         <div class="ic-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18"/><path d="M8 2.5v4"/><path d="M16 2.5v4"/><path d="m10 13.5 4 4"/><path d="m14 13.5-4 4"/></svg></div>
         <h3>Cancellation Policy</h3>
-        <p style="margin-bottom:14px;">There are a limited number of rooms this year. Please review the timeline carefully before booking.</p>
+        <p style="margin-bottom:14px;">Please review the timeline carefully before booking.</p>
         <div class="crow full"><span class="cd"></span><span><b>On or before September 15, 2026:</b> Full refund</span></div>
         <div class="crow half"><span class="cd"></span><span><b>September 16 &ndash; October 15, 2026:</b> 50% refund of total amount paid</span></div>
         <div class="crow none"><span class="cd"></span><span><b>After October 15, 2026:</b> No refund</span></div>
@@ -778,7 +769,7 @@
 
     <div class="alert alert-info reveal">
       <span class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg></span>
-      <span><strong>How reservations work:</strong> submitting the form holds your room request. Jenny Miller, our travel agent, will follow up to collect payment and finalize your booking. Rooms are confirmed on a first-come, first-served basis. <strong>Final payment deadline: November 10, 2026.</strong></span>
+      <span><strong>How reservations work:</strong> submitting the form sends your room request. Jenny Miller, our travel agent, will follow up to collect payment and finalize your booking. Availability of your preferred room is not guaranteed &mdash; Jenny Miller, our travel agent, will confirm with the resort and with you before anything is booked or any money is owed. <strong>Final payment deadline: November 10, 2026.</strong></span>
     </div>
 
     <!-- STEP 1 — CALCULATOR -->
@@ -799,10 +790,10 @@
           <label for="fRoom">Room Type</label>
           <select id="fRoom" onchange="calcPrice()">
             <option value="">Select your room…</option>
-            <option value="jt">Junior Suite — Tropical View ($1,181.56 / person · 15 available)</option>
-            <option value="jo">Junior Suite — Partial Ocean View ($1,294.12 / person · 10 available)</option>
-            <option value="pt">Preferred Club Jr Suite — Tropical View ($1,406.64 / person · ONLY 5 LEFT)</option>
-            <option value="po">Preferred Club Jr Suite — Partial Ocean View ($1,519.16 / person · 10 available)</option>
+            <option value="jt">Junior Suite — Tropical View ($1,181.56 / person)</option>
+            <option value="jo">Junior Suite — Partial Ocean View ($1,294.12 / person)</option>
+            <option value="pt">Preferred Club Jr Suite — Tropical View ($1,406.64 / person)</option>
+            <option value="po">Preferred Club Jr Suite — Partial Ocean View ($1,519.16 / person)</option>
             <option value="of">Preferred Club Jr Suite — Oceanfront ($1,687.96 / person)</option>
           </select>
         </div>
