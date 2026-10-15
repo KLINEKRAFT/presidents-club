@@ -195,6 +195,10 @@
   .room-b{padding:22px;}
   .room-price{font-family:var(--accent);font-size:30px;font-weight:700;color:var(--cb-blue);line-height:1;}
   .room-price s{font-family:var(--bodyfont);font-size:13px;font-weight:400;color:var(--muted);text-decoration:none;}
+  .room-was{font-size:12.5px;color:var(--muted);margin-bottom:6px;}
+  .room-was del{color:var(--muted);}
+  .room-save{display:inline-block;margin-top:9px;padding:4px 11px;border-radius:20px;background:var(--ok-bg);color:var(--ok);font-family:var(--accent);font-size:11.5px;font-weight:600;letter-spacing:.04em;}
+  .was-night{color:var(--muted);}
   .room-extra{font-size:13px;color:var(--muted);margin-top:8px;}
   .room-extra b{color:var(--ink);font-weight:600;}
   .avail{display:inline-flex;align-items:center;gap:7px;margin-top:13px;padding:6px 13px;border-radius:20px;font-family:var(--accent);font-size:11.5px;font-weight:600;letter-spacing:.05em;}
@@ -433,6 +437,7 @@
         <div class="fact"><span class="fl">Destination</span><span class="fv">Secrets Tides Punta Cana, Dominican Republic</span></div>
         <div class="fact"><span class="fl">Resort Style</span><span class="fv">All-Inclusive &middot; Adults-Only &middot; Unlimited-Luxury&reg;</span></div>
         <div class="fact"><span class="fl">Trip Dates</span><span class="fv">January 24&ndash;28, 2027 &middot; 4 Nights</span></div>
+        <div class="fact"><span class="fl">Final Payment Due</span><span class="fv">November 10, 2026</span></div>
         <div class="fact"><span class="fl">Total Rooms</span><span class="fv">40 &middot; First-Come, First-Served</span></div>
         <div class="fact"><span class="fl">Airport Transfers</span><span class="fv">~$36 per person &middot; via our travel agent</span></div>
         <div class="fact"><span class="fl">Estimated Airfare</span><span class="fv">~$600 per person &middot; booked independently</span></div>
@@ -532,7 +537,7 @@
       <span class="eyebrow">Choose Your Room</span>
       <h2>Room Options &amp; Pricing</h2>
       <hr class="rule center">
-      <p>All rates are per person, based on double occupancy. Traveling solo? Your total is the same as two guests (resort policy). Rooms are limited &mdash; reserve early.</p>
+      <p>All rates are per person, based on double occupancy, at our exclusive group block rate &mdash; regular pricing is shown crossed out so you can see your savings. <strong>Final payment is due November 10, 2026.</strong> Traveling solo? Your total is the same as two guests (resort policy). Rooms are limited &mdash; reserve early.</p>
     </div>
 
     <div class="room-feature reveal">
@@ -554,14 +559,16 @@
       <div class="room reveal">
         <div class="room-h"><div class="rn">Junior Suite<br>Tropical View</div><div class="avail hi">15 Available</div></div>
         <div class="room-b">
-          <div class="room-price">$1,501.44 <s>/ person</s></div>
-          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>Extra nights: $375.36 / person / night</b></div>
+          <div class="room-was">Regularly <del>$1,501.44</del> / person</div>
+          <div class="room-price">$1,181.56 <s>/ person</s></div>
+          <div class="room-save">You save $319.88 / person</div>
+          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$295.39 / person / night</b> <span class="was-night">(reg. <del>$375.36</del>)</span></div>
           <div class="room-hr"></div>
           <div class="feats">
             <div class="feat">4-night stay (Jan 24&ndash;28) included</div>
             <div class="feat">Serene tropical garden views</div>
             <div class="feat">Full all-inclusive, Unlimited-Luxury&reg; amenities</div>
-            <div class="feat">Extra nights before &amp; after at $375.36 / person / night</div>
+            <div class="feat">Extra nights before &amp; after at $295.39 / person / night</div>
             <div class="feat">Airport transfers ~$36 / person (via our travel agent)</div>
           </div>
         </div>
@@ -570,14 +577,16 @@
       <div class="room reveal">
         <div class="room-h"><div class="rn">Junior Suite<br>Partial Ocean View</div><div class="avail med">10 Available</div></div>
         <div class="room-b">
-          <div class="room-price">$1,644.96 <s>/ person</s></div>
-          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>Extra nights: $411.24 / person / night</b></div>
+          <div class="room-was">Regularly <del>$1,644.96</del> / person</div>
+          <div class="room-price">$1,294.12 <s>/ person</s></div>
+          <div class="room-save">You save $350.84 / person</div>
+          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$323.53 / person / night</b> <span class="was-night">(reg. <del>$411.24</del>)</span></div>
           <div class="room-hr"></div>
           <div class="feats">
             <div class="feat">4-night stay (Jan 24&ndash;28) included</div>
             <div class="feat">Partial ocean views</div>
             <div class="feat">Full all-inclusive, Unlimited-Luxury&reg; amenities</div>
-            <div class="feat">Extra nights at $411.24 / person / night</div>
+            <div class="feat">Extra nights at $323.53 / person / night</div>
             <div class="feat">Airport transfers ~$36 / person (via our travel agent)</div>
           </div>
         </div>
@@ -586,8 +595,10 @@
       <div class="room pref reveal">
         <div class="room-h"><div class="rn">Preferred Club Junior Suite<br>Tropical View</div><span class="pcbadge">Preferred Club</span></div>
         <div class="room-b">
-          <div class="room-price">$1,788.48 <s>/ person</s></div>
-          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>Extra nights: $447.12 / person / night</b></div>
+          <div class="room-was">Regularly <del>$1,788.48</del> / person</div>
+          <div class="room-price">$1,406.64 <s>/ person</s></div>
+          <div class="room-save">You save $381.84 / person</div>
+          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$351.66 / person / night</b> <span class="was-night">(reg. <del>$447.12</del>)</span></div>
           <div class="avail lo">Only 5 Rooms &mdash; Limited</div>
           <div class="room-hr"></div>
           <div class="feats">
@@ -595,7 +606,7 @@
             <div class="feat">Exclusive Preferred Club lounge &amp; butler service</div>
             <div class="feat">Premium spirits &amp; upgraded minibar</div>
             <div class="feat">Lush tropical garden views</div>
-            <div class="feat">Extra nights at $447.12 / person / night</div>
+            <div class="feat">Extra nights at $351.66 / person / night</div>
           </div>
         </div>
       </div>
@@ -603,8 +614,10 @@
       <div class="room pref reveal">
         <div class="room-h"><div class="rn">Preferred Club Junior Suite<br>Partial Ocean View</div><span class="pcbadge">Preferred Club</span></div>
         <div class="room-b">
-          <div class="room-price">$1,932.00 <s>/ person</s></div>
-          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>Extra nights: $483.00 / person / night</b></div>
+          <div class="room-was">Regularly <del>$1,932.00</del> / person</div>
+          <div class="room-price">$1,519.16 <s>/ person</s></div>
+          <div class="room-save">You save $412.84 / person</div>
+          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$379.79 / person / night</b> <span class="was-night">(reg. <del>$483.00</del>)</span></div>
           <div class="avail med">10 Available</div>
           <div class="room-hr"></div>
           <div class="feats">
@@ -612,7 +625,24 @@
             <div class="feat">Exclusive Preferred Club lounge &amp; butler service</div>
             <div class="feat">Premium spirits &amp; upgraded minibar</div>
             <div class="feat">Stunning partial ocean views</div>
-            <div class="feat">Extra nights at $483.00 / person / night</div>
+            <div class="feat">Extra nights at $379.79 / person / night</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room pref reveal">
+        <div class="room-h"><div class="rn">Preferred Club Junior Suite<br>Oceanfront</div><span class="pcbadge">Preferred Club</span></div>
+        <div class="room-b">
+          <div class="room-was">Group block rate</div>
+          <div class="room-price">$1,687.96 <s>/ person</s></div>
+          <div class="room-extra">Jan 24&ndash;28 &middot; 4 nights &nbsp;|&nbsp; <b>$421.99 / person / night</b></div>
+          <div class="room-hr"></div>
+          <div class="feats">
+            <div class="feat">4-night stay (Jan 24&ndash;28) included</div>
+            <div class="feat">Exclusive Preferred Club lounge &amp; butler service</div>
+            <div class="feat">Premium spirits &amp; upgraded minibar</div>
+            <div class="feat">Front-row oceanfront views</div>
+            <div class="feat">Extra nights at $421.99 / person / night</div>
           </div>
         </div>
       </div>
@@ -748,7 +778,7 @@
 
     <div class="alert alert-info reveal">
       <span class="ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v5"/><path d="M12 7.5h.01"/></svg></span>
-      <span><strong>How reservations work:</strong> submitting the form holds your room request. Jenny Miller, our travel agent, will follow up to collect payment and finalize your booking. Rooms are confirmed on a first-come, first-served basis.</span>
+      <span><strong>How reservations work:</strong> submitting the form holds your room request. Jenny Miller, our travel agent, will follow up to collect payment and finalize your booking. Rooms are confirmed on a first-come, first-served basis. <strong>Final payment deadline: November 10, 2026.</strong></span>
     </div>
 
     <!-- STEP 1 — CALCULATOR -->
@@ -769,10 +799,11 @@
           <label for="fRoom">Room Type</label>
           <select id="fRoom" onchange="calcPrice()">
             <option value="">Select your room…</option>
-            <option value="jt">Junior Suite — Tropical View ($1,501.44 / person · 15 available)</option>
-            <option value="jo">Junior Suite — Partial Ocean View ($1,644.96 / person · 10 available)</option>
-            <option value="pt">Preferred Club Jr Suite — Tropical View ($1,788.48 / person · ONLY 5 LEFT)</option>
-            <option value="po">Preferred Club Jr Suite — Partial Ocean View ($1,932.00 / person · 10 available)</option>
+            <option value="jt">Junior Suite — Tropical View ($1,181.56 / person · 15 available)</option>
+            <option value="jo">Junior Suite — Partial Ocean View ($1,294.12 / person · 10 available)</option>
+            <option value="pt">Preferred Club Jr Suite — Tropical View ($1,406.64 / person · ONLY 5 LEFT)</option>
+            <option value="po">Preferred Club Jr Suite — Partial Ocean View ($1,519.16 / person · 10 available)</option>
+            <option value="of">Preferred Club Jr Suite — Oceanfront ($1,687.96 / person)</option>
           </select>
         </div>
         <div class="fg">
@@ -800,7 +831,7 @@
           <div class="cline"><span>Select your room type and number of guests above</span><span>&mdash;</span></div>
         </div>
         <div class="ctotal"><span class="tl">Estimated Room Total</span><span class="ta" id="calcTotal">&mdash;</span></div>
-        <p class="calc-note">* Airfare (~$600 / person) and trip insurance are not included. Airport transfers (~$36 / person) are arranged with our travel agent. Final pricing is confirmed upon reservation.</p>
+        <p class="calc-note">* Airfare (~$600 / person) and trip insurance are not included. Airport transfers (~$36 / person) are arranged with our travel agent. Final pricing is confirmed upon reservation. Final payment is due November 10, 2026.</p>
       </div>
     </div>
 
@@ -847,10 +878,11 @@
 <script>
   /* ── Price calculator ── */
   const ROOMS={
-    jt:{base:1501.44,extra:375.36,name:'Junior Suite — Tropical View'},
-    jo:{base:1644.96,extra:411.24,name:'Junior Suite — Partial Ocean View'},
-    pt:{base:1788.48,extra:447.12,name:'Preferred Club Jr Suite — Tropical View'},
-    po:{base:1932.00,extra:483.00,name:'Preferred Club Jr Suite — Partial Ocean View'}
+    jt:{base:1181.56,extra:295.39,name:'Junior Suite — Tropical View'},
+    jo:{base:1294.12,extra:323.53,name:'Junior Suite — Partial Ocean View'},
+    pt:{base:1406.64,extra:351.66,name:'Preferred Club Jr Suite — Tropical View'},
+    po:{base:1519.16,extra:379.79,name:'Preferred Club Jr Suite — Partial Ocean View'},
+    of:{base:1687.96,extra:421.99,name:'Preferred Club Jr Suite — Oceanfront'}
   };
   function fmt(n){return '$'+n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
   function calcPrice(){
